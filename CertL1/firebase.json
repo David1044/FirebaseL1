@@ -1,0 +1,42 @@
+{
+  "hosting": {
+    "appAssociation": "AUTO",
+    "public": "/",
+   
+    "rewrites": [
+      
+       { // Shows the same content for multiple URLs
+        "source": "/error404",
+        "destination": "/error.html"},
+
+        {
+          "source": "/error403",
+          "destination": "/error2.html"
+        },
+        
+      
+      
+
+      {
+        "source": "/**",
+        "dynamicLinks": true
+      },
+
+       {
+        "source": "**",
+        "destination": "/index.html"
+       },
+
+        {
+          "source": "/prueba/**",
+          "dynamicLinks": true
+        },
+
+        {
+          "source": "/error1/**",
+          "dynamicLinks": true
+        }
+      
+    ]
+  }
+}
